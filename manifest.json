@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "shilai_li.android-manager",
+  "name": "Android Manager",
+  "version": "0.1.0",
+  "author": "Shilai Li",
+  "license": "MIT",
+  "description": "Connect Android phones over USB or Wi-Fi and mirror them with scrcpy. Uses the system adb and scrcpy; never needs root at runtime.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Android Manager",
+    "description": "Phones adb can see, Wi-Fi on :5555, and scrcpy mirrors",
+    "category": "Utilities",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {},
+    "schema": []
+  }
+}
